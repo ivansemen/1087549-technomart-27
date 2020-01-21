@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Иван Семёненко](https://up.htmlacademy.ru/htmlcss/27/user/1087549).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
