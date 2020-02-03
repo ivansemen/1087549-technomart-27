@@ -15,7 +15,10 @@
 			</div>
 
 			<div>
-				<p>Поиск</p>
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<input type="search" placeholder="Поиск:">
+					<button type="submit"><img></button>
+				</form>
 			</div>
 
 			<div>
@@ -102,29 +105,9 @@
 			<div>
 				<img src="img/map.jpg" width="300px" height="158px" alt="Карта">
 			</div>
-			<div class="popup-map">
-				<img src="img/map-popup.jpg" alt="Большая Конюшенная ул., 19">
-			</div>
+
 
 			<button>Заблудились? Напишите НАМ!</button>
-			<div class="popup-write-us">
-				<img alt="Закрыть всплывающее окно">
-				<form method="post" action="https://echo.htmlacademy.ru">
-					<p>
-						<label for="user-name">Ваше имя:</label>
-						<input id="user-name" type="text" name="login" placeholder="Имя Фамилия">
-					</p>
-					<p>
-						<label for="user-email">Ваш e-mail:</label>
-						<input id="user-email" type="email" name="email" placeholder="email@example.com">
-					</p>
-					<p>
-						<label for="user-text">Текст письма:</label>
-						<input id="user-text" type="text" name="text" placeholder="В свободной форме">
-					</p>
-					<button type="submit">Отправить</button>
-				</form>
-			</div>
 		</section>
 	</main>
 
@@ -182,6 +165,29 @@
 
 		</section>
 	</footer>
+
+	<div class="popup-map">
+		<img src="img/map-popup.jpg" alt="Большая Конюшенная ул., 19">
+	</div>
+
+	<div class="popup-write-us">
+		<button><img alt="Закрыть всплывающее окно"></button>
+		<form method="post" action="https://echo.htmlacademy.ru">
+			<p>
+				<label for="user-name">Ваше имя:</label>
+				<input id="user-name" type="text" name="login" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="user-email">Ваш e-mail:</label>
+				<input id="user-email" type="email" name="email" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="user-text">Текст письма:</label>
+				<input id="user-text" type="text" name="text" placeholder="В свободной форме">
+			</p>
+			<button type="submit">Отправить</button>
+		</form>
+	</div>
 </body>
 
 </html>
