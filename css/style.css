@@ -186,7 +186,12 @@ background-color: #8e1e26;
     font-size: 30px;
 }
 
-.pt-sans 
+.text-wrapper 
+{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.text-about-map 
 {
     font-family: 'PT Sans', sans-serif;
 }
@@ -255,8 +260,8 @@ background-color: #8e1e26;
     color: #ee3643;
 }
 
-.yellow-lists a,
-.yellow-link 
+.catalog-lists a,
+.connection-link 
 {
     color: #ffd180;
 }
@@ -266,12 +271,12 @@ footer a:hover
     text-decoration: underline;
 }
 
-.yellow-lists a:focus 
+.catalog-lists a:focus 
 {
     color: #99866b;
     text-decoration: none;
 }
-.yellow-link:focus  
+.connection-link:focus  
 {
     color: #ee3643;
 }
@@ -312,11 +317,11 @@ footer a:hover
     color: #c5cad0;
 }
 
-.bread-crumbs li 
+.breadcrumbs li 
 {
     list-style: none;
 }
-.bread-crumbs a 
+.breadcrumbs a 
 {
     color: #000000;
     font-size: 13px;
