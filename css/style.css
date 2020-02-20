@@ -40,7 +40,6 @@ img
 .header-logo 
 {
     background-color: #ee3643;
-    border-bottom: 5px solid #b52933;
     width: 220px;
     height: 42px;
     display: flex;
@@ -48,10 +47,24 @@ img
     align-items: center;
 }
 
+.header-logo:before 
+{
+    content: "";
+    width: 220px;
+    height: 5px;
+    position: absolute;
+    top: 42px;
+    background-color: #b52933;
+}
+
 .header-logo:hover 
 {
-background-color: #ca2c37;
-border-bottom: 5px solid #9a212a;
+    background-color: #ca2c37;
+}
+
+.header-logo:hover:before
+{
+    background-color: #9a212a;
 }
 
 .header-logo:focus 
@@ -64,7 +77,6 @@ background-color: #8e1e26;
     width: 940px;
     margin: 0 auto;
     display: flex;
-    height: 42px;
     justify-content: space-between;
  }
 
@@ -112,10 +124,6 @@ background-color: #8e1e26;
     background-color: #212a3a;
 }
 
-.search input:hover ~ .btn-search path
-{
-    opacity: 1;
-}
 
 .search input:focus 
 {
@@ -123,12 +131,7 @@ background-color: #8e1e26;
     color: #262626;
 }
 
-.search input:focus ~ .btn-search path
 
-{
-    fill: #ee3643;
-    opacity: 1;
-}
 
 
 
@@ -302,21 +305,24 @@ background-color: #8e1e26;
 .container 
  {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+ }
+
+ .wrapper-main  
+ {
+    width: 940px;
+    margin: 0 auto;
  }
 
  .information-about-company 
  {
-    width: 540px;
-    height: 380px;
-    margin-left: 130px;
+    width: 520px;
+    margin-right: 122px;
  }
 
  .main-contacts 
  {
     width: 300px;
-    height: 375px;
-    margin-right: 130px;
  }
 
  .breadcrumbs 
@@ -326,11 +332,7 @@ background-color: #8e1e26;
     margin-bottom: 25px;
  }
 
- .wrapper-main 
- {
-    width: 940px;
-    margin: 0 auto;
- }
+ 
 
  .btn-about-company 
 {
@@ -356,10 +358,17 @@ background-color: #8e1e26;
 .text-wrapper 
 {
     font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+}
+
+.lists-delivery 
+{
+    font-size: 18px;
 }
 
 .text-about-map 
 {
+    font-size: 13px;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -391,12 +400,16 @@ background-color: #8e1e26;
     color: #ffff;
     margin-top: 85px;
     min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-wrapper 
 {
     display: flex;
     flex-direction: column;
+    margin-right: 70px;
 }
 
 .footer-logo 
@@ -415,8 +428,15 @@ background-color: #8e1e26;
     background-color: #293449;
     min-height: 110px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
+
+.rights 
+{
+    margin-right: 160px;
+}
+
+
 .main-footer li 
 {
     list-style: none;
@@ -426,10 +446,10 @@ background-color: #8e1e26;
 {
     min-height: 190px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.wrapper-lists 
+.lists-wrapper 
 {
     display: flex;
     flex-direction: column;
@@ -459,8 +479,14 @@ background-color: #8e1e26;
 
 .soc-net
 {
+    margin-right: 120px;
     display: flex;
 } 
+
+.email-address 
+{
+    margin-right: 50px;
+}
 
 .soc-net li 
 {
