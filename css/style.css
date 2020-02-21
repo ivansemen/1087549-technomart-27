@@ -185,41 +185,16 @@ background-color: #8e1e26;
 {
     background-color: #518534;
 }
-.header-information-wrapper 
-{
-    width: 940px;
-    display: flex;
-    justify-content: space-between;
-}
 
-.header-information 
-{
-    color: #ee3643;
-    font-size: 16px;
-    font-style: italic;
-    margin-left: 55px;
-}
-.phone-number 
-{
-    border: 3px solid #ffffff;
-    font-size: 21px;
-    width: 265px;
-    height: 40px;
-    margin-left: 70px;
-}
 
-.address 
-{
-    color: #32425c;
-    font-size: 14px;
-    margin-left: 80px;
-    margin-top: -15px;
-}
+
+
 
 
 .header-btn 
  {
     display: flex;
+    margin-right: -45px;
  }
 
 .header-btn a
@@ -234,10 +209,9 @@ background-color: #8e1e26;
 .header-btn .sign-in 
  {
     width: 120px;
-    margin-left: 70px;
  }
 
-  .header-btn .sign-up 
+.header-btn .sign-up 
  {
     width: 150px;
     margin-left: 10px;
@@ -256,16 +230,48 @@ background-color: #8e1e26;
 .middle-header 
 {
     background-color: #f3f7f8;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     min-height: 280px;
 }
 
-.middle-header nav 
+.header-information-wrapper 
 {
-    background-color: #32425c;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
+
+.header-information 
+{
+    color: #ee3643;
+    font-size: 16px;
+    font-style: italic;
+    width: 200px;
+}
+
+.header-wrapper 
+{
+    width: 270px;
+    margin-left: 72px;
+    margin-right: 70px;
+}
+
+.phone-number 
+{
+    border: 3px solid #ffffff;
+    font-size: 21px;
+    width: 265px;
+    height: 40px;
+}
+
+.address 
+{
+    color: #32425c;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+
 
 .middle-header li
 {
@@ -279,6 +285,7 @@ background-color: #8e1e26;
     border-bottom: 5px solid #293449;
     width: 940px;
     height: 55px;
+    background-color: #32425c;
  }
 
  .site-navigation 
@@ -308,7 +315,7 @@ background-color: #8e1e26;
     justify-content: center;
  }
 
- .wrapper-main  
+ .main-wrapper  
  {
     width: 940px;
     margin: 0 auto;
@@ -409,7 +416,7 @@ background-color: #8e1e26;
 {
     display: flex;
     flex-direction: column;
-    margin-right: 70px;
+    margin-right: 65px;
 }
 
 .footer-logo 
@@ -434,6 +441,7 @@ background-color: #8e1e26;
 .rights 
 {
     margin-right: 160px;
+    margin-top: 38px;
 }
 
 
@@ -453,17 +461,54 @@ background-color: #8e1e26;
 {
     display: flex;
     flex-direction: column;
+    width: 550px;
 }
+
+.lists-wrapper ul 
+{
+    padding: 0;
+}
+
 
 .information-lists 
 {
     display: flex;
     flex-direction: row;
+    margin-bottom: 48px;
+    margin-top: 42px;
 }
 
 .information-lists a
 {
     margin-right: 60px;
+}
+
+.information-lists .contact-link 
+{
+    margin-right: 0;
+}
+
+.catalog-lists .special-offers-link 
+{
+    margin-right: 0;
+}
+
+.catalog-lists a 
+{
+  margin-right: 60px;
+
+}
+
+.catalog-lists 
+{
+    display: flex;
+    flex-direction: row; 
+}
+
+.lists-wrapper .catalog-lists a,
+.connection-link 
+{
+    color: #ffd180;
 }
 
 .top-footer a
@@ -480,12 +525,22 @@ background-color: #8e1e26;
 .soc-net
 {
     margin-right: 120px;
+    margin-top: 38px;
     display: flex;
+    width: 130px;
+    padding: 0;
+
 } 
 
 .email-address 
 {
     margin-right: 50px;
+    margin-top: 38px;
+}
+
+.developer 
+{
+    margin-top: 38px;
 }
 
 .soc-net li 
@@ -508,22 +563,7 @@ background-color: #8e1e26;
     color: #ee3643;
 }
 
-.catalog-lists a 
-{
-    margin-right: 60px;
-}
 
-.catalog-lists 
-{
-    display: flex;
-    flex-direction: row;
-}
-
-.catalog-lists a,
-.connection-link 
-{
-    color: #ffd180;
-}
 
 footer a:hover 
 {
