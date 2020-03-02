@@ -92,10 +92,28 @@
 		<div class="title-wrapper">
 			<h1 class="main-title">Перфораторы</h1>
 		</div>
+			<p>Фильтр:</p>
+		<div>
+			<p>Сортировка:</p>
+			<a href="#">По цене</a>
+			<a href="#">По типу</a>
+			<a href="#">По функционалу</a>
+		</div>
 		<div class="catalog-columns">
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтры товара</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<h3>Цена:</h3>
+					<div class="price-range">
+						<div class="line"></div>
+						<div class="min-toggle"></div>
+						<div class="max-toggle"></div>
+					</div>
+					<input type="number" value="0" name="min-number" id="filter-min-price">
+					<span>-</span>
+					<input type="number" value="30000" name="max-number" id="filter-max-price">
+				</fieldset>
 				<fieldset>
 					<h3>Производители:</h3>
 
