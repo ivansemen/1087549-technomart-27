@@ -92,12 +92,14 @@
 		<div class="title-wrapper">
 			<h1 class="main-title">Перфораторы</h1>
 		</div>
-			<p>Фильтр:</p>
+			<h2>Фильтр:</h2>
 		<div>
 			<p>Сортировка:</p>
-			<a href="#">По цене</a>
-			<a href="#">По типу</a>
-			<a href="#">По функционалу</a>
+			<ul>
+			<li><a href="#">По цене</a></li>
+			<li><a href="#">По типу</a></li>
+			<li><a href="#">По функционалу</a></li>
+			</ul>
 		</div>
 		<div class="catalog-columns">
 		<section class="filters">
@@ -107,12 +109,14 @@
 					<h3>Цена:</h3>
 					<div class="price-range">
 						<div class="line"></div>
-						<div class="min-toggle"></div>
-						<div class="max-toggle"></div>
+						<button type="button" class="min-toggle"></button>
+						<button type="button" class="max-toggle"></button>
 					</div>
 					<input type="number" value="0" name="min-number" id="filter-min-price">
+					<label class="visually-hidden" for="filter-min-price">Минимальная цена</label>
 					<span>-</span>
 					<input type="number" value="30000" name="max-number" id="filter-max-price">
+					<label class="visually-hidden" for="filter-max-price">Максимаьная цена</label>
 				</fieldset>
 				<fieldset>
 					<h3>Производители:</h3>
