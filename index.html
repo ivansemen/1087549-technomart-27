@@ -97,14 +97,13 @@
 					<h3 class="title-slider">Дрели</h3>
 					<p class="text-slider">Соседям на радость!</p>
 					<img src="img/slider-1.jpg" width="620" height="266">
-					<a class="link-slider" href="catalog.html">Открыть каталог</a>
 				</div>
 				<div>
 					<h3 class="title-slider">Перфораторы</h3>
 					<p class="text-slider">Настоящие мужские игрушки</p>
 					<img src="img/slider-2.jpg" width="620" height="266">
-					<a class="link-slider" href="catalog.html">Открыть каталог</a>
 				</div>
+			<a class="link-slider" href="catalog.html">Открыть каталог</a>
 			<button type="button"><span class="visually-hidden">Назад</span></button>
 			<button type="button"><span class="visually-hidden">Вперёд</span></button>
 			</div>
@@ -127,9 +126,9 @@
 		</section>
 
 		<section class="popular-items">
-			<div>
-				<h2>Популярные товары:</h2>
-				<a href="catalog.html">Все популярные товары</a>
+			<div class="popular-title-wrapper">
+				<h2 class="title-popular">Популярные товары:</h2>
+				<a href="catalog.html" class="link-popular">Все популярные товары</a>
 			</div>
 			<ul>
 				<li class="item">
@@ -220,37 +219,53 @@
 				</li>
 			</ul>	
 
-			<div>
-				<h2>Популярные производители:</h2>
-				<a href="catalog.html">Все производители:</a>
+			<div class="popular-title-wrapper">
+				<h2 class="title-popular">Популярные производители:</h2>
+				<a href="catalog.html" class="link-popular">Все производители:</a>
 			</div>
 			<ul>
-				<li><img src="img/bosch.png" width="122" height="31" alt="Bosh"></li>
-				<li><img src="img/makita.png" width="122" height="40" alt="Makita"></li>
-				<li><img src="img/dewalt.png" width="146" height="44" alt="DeWalt"></li>
-				<li><img src="img/interskol.png" width="178" height="26" alt="Interskol"></li>
-				<li><img src="img/hitachi.png" width="142" height="20" alt="Hitachi"></li>
-				<li><img src="img/lg.png" width="121" height="73" alt="LG"></li>
-				<li><img src="img/aeg.png" width="137" height="65" alt="AEG"></li>
-				<li><img src="img/metabo.png" width="155" height="55" alt="Metabo"></li>
+				<li class="popular-manufacturer">
+					<img src="img/bosch.png" width="122" height="31" alt="Bosh">
+				</li>
+				<li class="popular-manufacturer">
+					<img src="img/makita.png" width="122" height="40" alt="Makita">
+				</li>
+				<li class="popular-manufacturer">
+					<img src="img/dewalt.png" width="146" height="44" alt="DeWalt">
+				</li>
+				<li class="popular-manufacturer">
+					<img src="img/interskol.png" width="178" height="26" alt="Interskol">
+				</li>
+				<li class="popular-manufacturer">
+					<img src="img/hitachi.png" width="142" height="20" alt="Hitachi">
+				</li>
+				<li class="popular-manufacturer">
+					<img src="img/lg.png" width="121" height="73" alt="LG">
+				</li>
+				<li class="popular-manufacturer">
+					<img src="img/aeg.png" width="137" height="65" alt="AEG">
+				</li>
+				<li class="popular-manufacturer">
+					<img src="img/metabo.png" width="155" height="55" alt="Metabo">
+				</li>
 			</ul>	
 		</section>
 
 		<section class="service">
-			<h2>Сервисы</h2>
-			<p>
+			<h2 class="service-title">Сервисы</h2>
+			<p class="service-text">
 				Хороший интернет-магазин отличается от плохого не только ценами!
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 			</p>
-			<div>
-				<button type="button">Доставка</button>
-				<button type="button">Гарантия</button>
-				<button type="button">Кредит</button>
+			<div class="service-btns">
+				<button class="btn-service" type="button">Доставка</button>
+				<button class="btn-service" type="button">Гарантия</button>
+				<button class="btn-service" type="button">Кредит</button>
 			</div>
 
-			<div>
-				<h2>Доставка</h2>
-				<p>
+			<div class="delivery-wrapper">
+				<h2 class="service-caption">Доставка</h2>
+				<p class="service-text">
 					Мы с удовольствием доставим ваш товар прямо 
 					к вашему подъезду совершенно бесплатно!
 					Ведь мы неплохо заработаем, 
@@ -258,22 +273,22 @@
 				</p>
 			</div>
 
-			<div>
-				<h2>Гарантия</h2>
-				<p>
+			<div class="guarantee-wrapper">
+				<h2 class="service-caption">Гарантия</h2>
+				<p class="service-text">
 					Если купленный у нас товар поломается или заискрит, 
 					а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
 					Дом уж восстановите как-нибудь сами.
 				</p>
 			</div>
 
-			<div>
-				<h2>Кредит</h2>
-				<p>
+			<div class="credit-wrapper">
+				<h2 class="service-caption">Кредит</h2>
+				<p class="service-text">
 					Залезть в долговую яму стало проще! 
 					Кредитные консультанты придут вам на помощь.
 				</p>
-				<button>Отправить заявку</button>
+				<button class="btn-send-request">Отправить заявку</button>
 			</div>
 		</section>
 

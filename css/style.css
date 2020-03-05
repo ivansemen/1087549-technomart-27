@@ -419,6 +419,205 @@ background-color: #8e1e26;
     justify-content: center;
  }
 
+ .offers 
+ {
+    color: #ffffff;
+ }
+
+ .materials 
+ {
+    background-color: #ffbf47;
+ }
+
+ .tool 
+ {
+    background-color: #3bbce3;
+ }
+
+ .equipment 
+ {
+    background-color: #dc91d8;
+ }
+
+ .sale 
+ {
+    background-color: #8ed78f;
+ }
+
+ .delivery 
+ {
+    background-color: #ffc047;
+ }
+
+ .link-offers 
+ {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.1;
+ }
+
+.link-offers:hover 
+ {
+    opacity: 0.2;
+ }
+
+.link-offers:active  
+{
+    opacity: 0.3;
+}
+
+.title-offers 
+{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.title-slider 
+{
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.text-slider 
+{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.link-slider 
+{
+    background-color: #ee3643;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.link-slider:hover 
+{
+    background-color: #ca2c37;
+}
+
+.link-slider:active 
+{
+    background-color: #ba2732;
+}
+
+.popular-title-wrapper 
+{
+    background-color: #f9f5f0;
+    text-transform: uppercase;
+    white-space: pre;
+}
+
+.link-popular 
+{
+    background-color: #ee3643;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.popular-manufacturer
+{
+    border: 1px solid #eaeaea;
+}
+
+.popular-manufacturer:hover 
+{
+   
+}
+
+.popular-manufacturer:active 
+{
+    
+}
+
+.popular-manufacturer:active img 
+{
+    opacity: 0.3;
+}
+
+
+.title-popular 
+{
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+}
+
+.service 
+{
+    background-color: #f4f7f9;
+} 
+
+.service-title 
+{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.service-text 
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.btn-service 
+{
+    background-color: #32425c;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.btn-service:hover  
+{
+    background-color: #293449;
+}
+
+.btn-service:active 
+{
+    background-color: #ffffff;
+    color: #32425c;
+}
+
+.service-caption 
+{
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+}
+
+.service-text 
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.btn-send-request 
+{
+    color: #ffffff;
+    background-color: #ff5357;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-send-request:hover  
+{
+    background-color: #ca2c37;
+}
+
+.btn-send-request:active 
+{
+    background-color: #ba2732;
+}
+
  .main-wrapper  
  {
     width: 940px;
@@ -1074,6 +1273,11 @@ footer a:hover
     border-top: 1px solid #e5e5e5;
 }
 
+.filter fieldset:first-child 
+{
+    border: none;
+}
+
 
 
 .filter h3 
@@ -1211,12 +1415,109 @@ footer a:hover
     width: 700px; 
 }
 
+.sort 
+{
+    background-color: #f7f3ec;
+}
+
+.title-sort 
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.sort-lists 
+{
+    list-style: none;
+}
+
+.sort-link 
+{
+    color: #000000;
+    opacity: 0.3;
+    border-bottom: 1px dotted #ee3643;
+}
+
+.sort-link:hover 
+{
+    opacity: 1;
+    border-bottom: 1px solid #ee3643;
+}
+
+.sort-link:active 
+{
+    color: #f7a1a7;
+    border: none;
+}
+
 .catalog-columns 
 {
     display: flex;
     justify-content: space-between;
     width: 940px;
 }
+
+.title-filter 
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: #f7f3ec;
+    text-transform: uppercase;
+}
+
+.title-price 
+{
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.price-range 
+{
+    border-radius: 3px;
+    background-color: #f7f3ec;
+}
+
+.price-range .line 
+{
+    background-color: #00ca74;
+    height: 2px;
+    width: 180px;
+}
+
+.price-range .control
+{
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    border-bottom: 2px solid #e0ddd8;
+    position: relative;
+}
+
+.price-range .control:before 
+{
+    content: '';
+    background-color: #ababab;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px; 
+    left: 8px;
+}
+
+.input-price 
+{
+    background-color: #f7f3ec;
+    border: none;
+    border-radius: 3px;
+}
+
 
 .btn-show 
 {
@@ -1425,7 +1726,48 @@ footer a:hover
     border-left-color: #ee3643;
  }
 
- 
+ .pagination .pagination-link
+ {
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    color: #000000;
+ }
+
+ .pagination .pagination-link:first-child 
+ {
+    background-color: #ee3643;
+    color: #ffffff;
+ }
+
+ .pagination .pagination-link:hover 
+ {
+    border: 1px solid #bdc6ca;
+ }
+
+ .pagination .pagination-link:active 
+ {
+    border: 1px solid #ee3643;
+ }
+
+ .about-hammer-drill 
+ {
+    background-color: #f2f6f8;
+    color: #99999a;
+ }
+
+ .title-about-hammer-drill 
+ {
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 30px;
+ }
+
+ .text-about-hammer-drill 
+ {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'PT Sans', sans-serif;
+ }
 
  .popup-add-to-basket 
  {
