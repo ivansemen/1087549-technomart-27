@@ -507,7 +507,6 @@ background-color: #8e1e26;
 {
     background-color: #f9f5f0;
     text-transform: uppercase;
-    white-space: pre;
 }
 
 .link-popular 
@@ -525,12 +524,12 @@ background-color: #8e1e26;
 
 .popular-manufacturer:hover 
 {
-   
+   box-shadow: 0 10px 20px rgba(41, 52, 73, 0.5);
 }
 
 .popular-manufacturer:active 
 {
-    
+    box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
 .popular-manufacturer:active img 
@@ -1255,7 +1254,9 @@ footer a:hover
     color: #32425c;
     text-transform: uppercase;
     font-size: 30px;
+    font-weight: normal;
 }
+
 .filter 
 {
     position: relative;
