@@ -79,59 +79,61 @@
 		</div>
 	</header>
 	<main class="container">
+		<div class="offers-wrapper">
 		<section class="offers">
 			<h2 class="visually-hidden">Предложения</h2>
-			<div class="materials">
+			<div class="materials offer-item">
 				<div class="flag flag-new">новинка</div>
 				<h3 class="title-offers">Материалы</h3>
 				<a class="link-offers" href="#">На любой вкус</a>
 			</div>
 
-			<div class="tool">
+			<div class="tool offer-item">
 				<h3 class="title-offers">Инструмент</h3>
 				<a class="link-offers" href="#">На все случаи</a>
 			</div>
 
+			<div class="equipment offer-item">
+					<h3 class="title-offers">Техника</h3>
+					<a class="link-offers" href="#">Для стройки</a>
+			</div>
+
 			<div class="slider">
-				<div>
+				<div class="slider-1">
 					<h3 class="title-slider">Дрели</h3>
 					<p class="text-slider">Соседям на радость!</p>
 					<img src="img/slider-1.jpg" width="620" height="266">
 				</div>
-				<div>
+				<div class="slider-2">
 					<h3 class="title-slider">Перфораторы</h3>
 					<p class="text-slider">Настоящие мужские игрушки</p>
 					<img src="img/slider-2.jpg" width="620" height="266">
 				</div>
 			<a class="link-slider" href="catalog.html">Открыть каталог</a>
-			<button type="button"><span class="visually-hidden">Назад</span></button>
-			<button type="button"><span class="visually-hidden">Вперёд</span></button>
+			<button class="slider-btn" type="button"><span class="visually-hidden">Назад</span></button>
+			<button class="slider-btn" type="button"><span class="visually-hidden">Вперёд</span></button>
 			</div>
 
-			<div>
-				<div class="equipment">
-					<h3 class="title-offers">Техника</h3>
-					<a class="link-offers" href="#">Для стройки</a>
-				</div>
-				<div class="sale">
+			<div class="offers-sidebar">
+				<div class="sale offer-item">
 					<h3 class="title-offers">Скидки 50%</h3>
 					<a class="link-offers" href="#">На 350 товаров</a>
 				</div>
-				<div class="delivery">
+				<div class="delivery offer-item">
 					<h3 class="title-offers">Доставка</h3>
 					<a class="link-offers" href="#">Бесплатно</a>
 				</div>
 			</div>
-
 		</section>
+		</div>
 
-		<section class="popular-items">
+		<section class="popular-items-wrapper">
 			<div class="popular-title-wrapper">
 				<h2 class="title-popular">Популярные товары:</h2>
 				<a href="catalog.html" class="link-popular">Все популярные товары</a>
 			</div>
-			<ul>
-				<li class="item">
+			<ul class="popular-items">
+				<li class="item popular-item">
 				<a href="#">
 				<img src="img/perforator-4.jpg" width="218" height="170" alt="Голубой Перфоратор BOSCH">
 				</a>
@@ -153,7 +155,7 @@
 				<div class="btn-price">25500 Р.</div>	
 				</li>
 
-				<li class="item">
+				<li class="item popular-item">
 				<a href="#">
 				<img src="img/perforator-1.jpg" width="218" height="170" alt="Зелёный Перфоратор BOSCH">
 				</a>
@@ -175,7 +177,7 @@
 				<div class="btn-price">15500 Р.</div>	
 				</li>
 
-				<li class="item">
+				<li class="item popular-item">
 				<a href="#">
 				<img src="img/perforator-2.jpg" width="218" height="170" alt="Зелёный Перфоратор BOSCH">
 				</a>
@@ -197,7 +199,7 @@
 				<div class="btn-price">25500 Р.</div>	
 				</li>
 
-				<li class="item">
+				<li class="item popular-item">
 				<a href="#">
 				<img src="img/perforator-3.jpg" width="218" height="170" alt="Зелёный Перфоратор BOSCH">
 				</a>
@@ -223,7 +225,7 @@
 				<h2 class="title-popular">Популярные производители:</h2>
 				<a href="catalog.html" class="link-popular">Все производители:</a>
 			</div>
-			<ul>
+			<ul class="manufacturers-wrapper">
 				<li class="popular-manufacturer">
 					<img src="img/bosch.png" width="122" height="31" alt="Bosh">
 				</li>
@@ -252,46 +254,54 @@
 		</section>
 
 		<section class="service">
+		<div class="service-text-wrapper">
 			<h2 class="service-title">Сервисы</h2>
 			<p class="service-text">
-				Хороший интернет-магазин отличается от плохого не только ценами!
+				Хороший интернет-магазин отличается от плохого не только ценами!<br>
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 			</p>
-			<div class="service-btns">
+		</div>
+			
+		<div class="service-wrapper">
+			<div class="btns-service">
 				<button class="btn-service" type="button">Доставка</button>
 				<button class="btn-service" type="button">Гарантия</button>
 				<button class="btn-service" type="button">Кредит</button>
 			</div>
-
 			<div class="delivery-wrapper">
 				<h2 class="service-caption">Доставка</h2>
 				<p class="service-text">
-					Мы с удовольствием доставим ваш товар прямо 
-					к вашему подъезду совершенно бесплатно!
-					Ведь мы неплохо заработаем, 
+					Мы с удовольствием доставим ваш товар прямо<br> 
+					к вашему подъезду совершенно бесплатно!<br>
+					Ведь мы неплохо заработаем,<br> 
 					поднимая его на ваш этаж!
 				</p>
 			</div>
 
+
 			<div class="guarantee-wrapper">
 				<h2 class="service-caption">Гарантия</h2>
 				<p class="service-text">
-					Если купленный у нас товар поломается или заискрит, 
-					а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+					Если купленный у нас товар поломается или заискрит,<br>
+					а также в случае пожара, спровоцированного его возгоранием,<br>
+					вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+					сгоревший товар на новый.<br>
 					Дом уж восстановите как-нибудь сами.
 				</p>
 			</div>
 
 			<div class="credit-wrapper">
 				<h2 class="service-caption">Кредит</h2>
-				<p class="service-text">
-					Залезть в долговую яму стало проще! 
+				<p class="service-text credit-text">
+					Залезть в долговую яму стало проще!<br> 
 					Кредитные консультанты придут вам на помощь.
 				</p>
 				<button class="btn-send-request">Отправить заявку</button>
 			</div>
+		</div>
 		</section>
 
+		<div class="information-block">
 		<section class="information-about-company">
 			<h2 class="title-company">Компания «Техномарт»</h2>
 			<div class="text-wrapper">
@@ -329,6 +339,7 @@
 
 			<button class="btn-inf btn-write-us" type="button">Заблудились? Напишите НАМ!</button>
 		</section>
+		</div>
 	</main>
 
 	<footer class="main-footer">

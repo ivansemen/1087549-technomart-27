@@ -416,12 +416,53 @@ background-color: #8e1e26;
 .container 
  {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .information-block 
+ {
+    display: flex;
     justify-content: center;
  }
 
  .offers 
  {
     color: #ffffff;
+    width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ .offers-sidebar 
+ {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .offers-wrapper 
+ {
+    display: flex;
+    justify-content: center;
+ }
+
+ .offer-item 
+ {
+    width: 300px;
+    height: 123px;
+    margin-bottom: 20px;
+ }
+
+ .slider-2 
+ {
+    display: none;
+ }
+
+ .slider 
+ {
+    width: 620px;
+    position: relative;
  }
 
  .materials 
@@ -478,12 +519,14 @@ background-color: #8e1e26;
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
+    position: absolute;
 }
 
 .text-slider 
 {
     font-size: 18px;
     line-height: 24px;
+    position: absolute;
 }
 
 .link-slider 
@@ -491,6 +534,14 @@ background-color: #8e1e26;
     background-color: #ee3643;
     color: #ffffff;
     text-transform: uppercase;
+    position: absolute;
+    top: 200px;
+}
+
+.slider-btn 
+{
+    position: absolute;
+    top: 130px;
 }
 
 .link-slider:hover 
@@ -503,10 +554,29 @@ background-color: #8e1e26;
     background-color: #ba2732;
 }
 
+.popular-items-wrapper 
+{
+   display: flex;
+   flex-direction: column;
+}
+
+.popular-items
+{
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .popular-title-wrapper 
 {
     background-color: #f9f5f0;
     text-transform: uppercase;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .link-popular 
@@ -517,9 +587,23 @@ background-color: #8e1e26;
     color: #ffffff;
 }
 
+.manufacturers-wrapper 
+{
+    display: flex;
+    list-style: none;
+    width: 940px;
+    padding: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .popular-manufacturer
 {
     border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+    width: 218px;
+    height: 143px;
 }
 
 .popular-manufacturer:hover 
@@ -543,17 +627,32 @@ background-color: #8e1e26;
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
+    margin-right: 370px;
 }
+
 
 .service 
 {
     background-color: #f4f7f9;
-} 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-wrapper 
+{
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+}
 
 .service-title 
 {
     font-size: 30px;
     line-height: 30px;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 68px;
 }
 
 .service-text 
@@ -561,6 +660,12 @@ background-color: #8e1e26;
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
     line-height: 24px;
+}
+
+.btns-service 
+{
+    width: 240px;
+    margin-right: 80px;
 }
 
 .btn-service 
@@ -571,6 +676,15 @@ background-color: #8e1e26;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
+    border-top: 1px solid #41516a;
+    border-bottom: 1px solid #293449;
+    width: 240px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .btn-service:hover  
@@ -582,6 +696,8 @@ background-color: #8e1e26;
 {
     background-color: #ffffff;
     color: #32425c;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
 }
 
 .service-caption 
@@ -590,6 +706,13 @@ background-color: #8e1e26;
     font-size: 36px;
     line-height: 36px;
     color: #32425c;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.service-text-wrapper 
+{
+    width: 940px;
 }
 
 .service-text 
@@ -597,6 +720,13 @@ background-color: #8e1e26;
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
     line-height: 24px;
+    margin: 0;
+    margin-bottom: 75px;
+}
+
+.credit-text 
+{
+    margin-bottom: 30px;
 }
 
 .btn-send-request 
@@ -605,6 +735,9 @@ background-color: #8e1e26;
     background-color: #ff5357;
     border: none;
     border-radius: 3px;
+    padding: 10px 40px;
+    margin-bottom: 110px;
+    text-transform: uppercase;
 }
 
 .btn-send-request:hover  
@@ -617,6 +750,21 @@ background-color: #8e1e26;
     background-color: #ba2732;
 }
 
+.delivery-wrapper 
+{
+    /*display: none;*/
+}
+
+.guarantee-wrapper 
+{
+    display: none;
+}
+
+.credit-wrapper 
+{
+    display: none;
+}
+
  .main-wrapper  
  {
     width: 940px;
@@ -627,6 +775,7 @@ background-color: #8e1e26;
  {
     width: 520px;
     margin-right: 122px;
+    margin-bottom: 86px;
  }
 
  .main-contacts 
@@ -748,7 +897,6 @@ background-color: #8e1e26;
 {
     background-color: #32425c;
     color: #ffffff;
-    margin-top: 85px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -759,7 +907,7 @@ background-color: #8e1e26;
 {
     display: flex;
     flex-direction: column;
-    margin-right: 65px;
+    margin-right: 86px;
 }
 
 .footer-logo 
@@ -1416,9 +1564,24 @@ footer a:hover
     width: 700px; 
 }
 
+.sort-lists 
+{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
 .sort 
 {
     background-color: #f7f3ec;
+    width: 700px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .title-sort 
@@ -1428,18 +1591,18 @@ footer a:hover
     line-height: 18px;
     text-transform: uppercase;
     font-weight: normal;
+    margin: 0;
+    margin-right: 140px;
 }
 
-.sort-lists 
-{
-    list-style: none;
-}
+
 
 .sort-link 
 {
     color: #000000;
     opacity: 0.3;
     border-bottom: 1px dotted #ee3643;
+    margin-right: 70px;
 }
 
 .sort-link:hover 
@@ -1468,6 +1631,11 @@ footer a:hover
     line-height: 18px;
     background-color: #f7f3ec;
     text-transform: uppercase;
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    border-radius: 3px;
 }
 
 .title-price 
@@ -1480,6 +1648,9 @@ footer a:hover
 {
     border-radius: 3px;
     background-color: #f7f3ec;
+    position: relative;
+    padding: 38px 20px;
+    margin-bottom: 10px;
 }
 
 .price-range .line 
@@ -1487,6 +1658,17 @@ footer a:hover
     background-color: #00ca74;
     height: 2px;
     width: 180px;
+}
+
+.right-line 
+{
+    height: 2px;
+    width: 40px;
+    background-color: #d7dcde;
+    z-index: 1000;
+    position: absolute;
+    left: 160px;
+    top: 38px;
 }
 
 .price-range .control
@@ -1497,8 +1679,16 @@ footer a:hover
     border: none;
     border-radius: 50%;
     border-bottom: 2px solid #e0ddd8;
-    position: relative;
+    position: absolute;
+    padding: 0;
+    top: 30px;
 }
+
+.max-toggle 
+{
+    left: 140px;
+}
+
 
 .price-range .control:before 
 {
@@ -1512,13 +1702,30 @@ footer a:hover
     left: 8px;
 }
 
+.filter-price-wrapper 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
 .input-price 
 {
     background-color: #f7f3ec;
     border: none;
     border-radius: 3px;
+    width: 93px;
+    padding: 9px 1px;
+    -moz-appearance: textfield;
 }
 
+.input-price::-webkit-inner-spin-button,
+.input-price::-webkit-outer-spin-button 
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
 
 .btn-show 
 {
@@ -1603,6 +1810,15 @@ footer a:hover
     margin-right: 0;
 }
 
+.popular-item:nth-child(3n)
+{
+    margin-right: 20px;
+}
+
+.popular-item:nth-child(4n) 
+{
+    margin-right: 0;
+}
 
 
 .btns 
@@ -1727,17 +1943,25 @@ footer a:hover
     border-left-color: #ee3643;
  }
 
+ .pagination 
+ {
+    margin-top: 50px;
+    margin-bottom: 60px; 
+ }
+
  .pagination .pagination-link
  {
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     color: #000000;
+    padding: 7px 15px;
  }
 
  .pagination .pagination-link:first-child 
  {
     background-color: #ee3643;
     color: #ffffff;
+    border: 1px solid #ee3643;
  }
 
  .pagination .pagination-link:hover 
@@ -1754,6 +1978,14 @@ footer a:hover
  {
     background-color: #f2f6f8;
     color: #99999a;
+    display: flex;
+    justify-content: center;
+ }
+
+ .about-hammer-wrapper 
+ {
+    width: 940px;
+    margin-bottom: 70px;
  }
 
  .title-about-hammer-drill 
