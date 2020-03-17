@@ -6,7 +6,8 @@
 	<title>HTML Academy: Техномарт</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
 
 
 			<div class="header-information-items">
-				<p class="header-information phone-number">+7 (812) 555-05-55</p>
+				<a href="tel:+7(812)555-05-55" class="header-information phone-number">+7 (812) 555-05-55</a>
 				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
 
@@ -102,12 +103,12 @@
 				<div class="slider-1">
 					<h3 class="title-slider">Дрели</h3>
 					<p class="text-slider">Соседям на радость!</p>
-					<img src="img/slider-1.jpg" width="620" height="266">
+					<img src="img/slider-1.jpg" width="620" height="266" alt="Картинка Дрели">
 				</div>
 				<div class="slider-2">
 					<h3 class="title-slider">Перфораторы</h3>
 					<p class="text-slider">Настоящие мужские игрушки</p>
-					<img src="img/slider-2.jpg" width="620" height="266">
+					<img src="img/slider-2.jpg" width="620" height="266" alt="Картинка Перфоратора">
 				</div>
 			<a class="link-slider" href="catalog.html">Открыть каталог</a>
 			
@@ -115,8 +116,8 @@
 			 <button class="slider-btn-right" type="button"><span class="visually-hidden">Вперёд</span></button>
 
 			 <div class="controls">	
-			 	<button type="button" class="control-slider control-slider-active"><span class="visually-hidden">Слайд-1</span></button>
-			 	<button type="button" class="control-slider"><span class="visually-hidden">Слайд-2</span></button>
+			 	<button type="button" class="control-slider control-slider-active control-back"><span class="visually-hidden">Слайд-1</span></button>
+			 	<button type="button" class="control-slider control-forward"><span class="visually-hidden">Слайд-2</span></button>
 			 </div>
 
 			</div>
@@ -277,9 +278,9 @@
 			
 		<div class="service-wrapper">
 			<div class="btns-service">
-				<button class="btn-active" type="button">Доставка</button>
-				<button class="btn-service" type="button">Гарантия</button>
-				<button class="btn-service" type="button">Кредит</button>
+				<button class="btn-active btn-delivery" type="button">Доставка</button>
+				<button class="btn-service btn-guarantee" type="button">Гарантия</button>
+				<button class="btn-service btn-credit" type="button">Кредит</button>
 			</div>
 			<div class="delivery-wrapper">
 				<h2 class="service-caption">Доставка</h2>
@@ -346,7 +347,7 @@
 			</p>
 
 			<div>
-				<img class="img-map" src="img/map.jpg" width="300px" height="158px" alt="Карта">
+				<img class="img-map" src="img/map.jpg" width="300" height="158" alt="Карта">
 			</div>
 
 
@@ -457,6 +458,7 @@
 		</div>
 		</form>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
