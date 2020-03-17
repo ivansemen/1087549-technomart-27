@@ -657,7 +657,7 @@ background-color: #8e1e26;
     right: 295px;
 }
 
-.control-slider::after
+.control-slider-active::after 
 {
     content: "";
     position: absolute;
@@ -668,18 +668,6 @@ background-color: #8e1e26;
     width: 6px;
     background-color: #ee3643; 
 }
-
-.control-slider:first-child::after 
-{
-    display: none;
-}
-
-.control-slider:last-child::after 
-{
-    display: none;
-}
-
-
 
 .popular-items-wrapper 
 {
@@ -831,7 +819,7 @@ background-color: #8e1e26;
 
 .btn-service 
 {
-     background-color: #32425c;
+    background-color: #32425c;
     border: none;
     color: #ffffff;
     font-weight: bold;
@@ -857,14 +845,24 @@ background-color: #8e1e26;
 {
     background-color: #ffffff;
     color: #32425c;
+    border: none;
     border-bottom: 1px solid #ffffff;
     border-top: 1px solid #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 240px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
 }
-/*Этот класс будет добавляться к кнопке с помощью js*/
 
 .delivery-wrapper 
 {
-    display: none;
+    display: block;
 }
 
 .guarantee-wrapper 
