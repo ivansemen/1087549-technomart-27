@@ -3,6 +3,7 @@ var popup = document.querySelector(".popup-write-us");
 var close = popup.querySelector(".close-popup-write-us");
 var login = popup.querySelector("[name=login]");
 var email = popup.querySelector("[name=email]");
+var text = popup.querySelector("[name=text]");
 var form = popup.querySelector("form");
 var isStorageSupport = true;
 var storage = "";
@@ -19,6 +20,7 @@ button.classList.remove("btn-active");
 button.classList.add("btn-service");
 }
 
+btnDelivery.classList.remove("btn-service");
 btnDelivery.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	credit.style.display = "none";
@@ -125,6 +127,11 @@ link.addEventListener("click", function (evt) {
   	email.focus();
   } else {
   	login.focus();
+  }
+  if (storage) 
+  {
+  	email.value = storage;
+  	text.focus();
   }
 });
 
