@@ -108,6 +108,22 @@ backDot.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	switchLeft();
 });
+
+
+
+var mapBtn = document.querySelector(".btn-map");
+var mapPopup = document.querySelector(".popup-map");
+var closeBtn = document.querySelector(".close-popup-map");
+
+mapBtn.addEventListener("click", function(evt) {
+	evt.preventDefault();
+	mapPopup.classList.add("popup-show");
+});
+
+closeBtn.addEventListener("click", function(evt) {
+	evt.preventDefault();
+	mapPopup.classList.remove("popup-show");
+});
   
   try {
     storage = localStorage.getItem("login");
@@ -131,6 +147,7 @@ link.addEventListener("click", function (evt) {
   if (storage) 
   {
   	email.value = storage;
+  	
   	text.focus();
   }
 });
@@ -163,6 +180,9 @@ window.addEventListener("keydown", function (evt) {
       if (popup.classList.contains("popup-show")) {
         popup.classList.remove("popup-show");
         popup.classList.remove("popup-error");
+      }
+      if (mapPopup.classList.contains("popup-show")) {
+      	mapPopup.classList.remove("popup-show");
       }
     }
   });
