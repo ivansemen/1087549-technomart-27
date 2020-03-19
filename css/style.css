@@ -1384,7 +1384,7 @@ footer a:hover
     width: 620px;
     height: 423px;
     border-top: 7px solid #ff5257;
-    position: fixed;
+    position: fixed;    
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
     top: 40px;
     left: 50%;
@@ -2326,7 +2326,7 @@ footer a:hover
     top: 150px;
     left: 50%;
     margin-left: -310px;
-    box-shadow: 0 7px 50px 3px #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
     background-color: #ffffff;
     z-index: 1000;
  }
