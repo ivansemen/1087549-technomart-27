@@ -7,6 +7,7 @@ var text = popup.querySelector("[name=text]");
 var form = popup.querySelector("form");
 var isStorageSupport = true;
 var storage = "";
+var storageEmail = "";
 
 var btnDelivery = document.querySelector(".btn-delivery");
 var btnGuarantee = document.querySelector(".btn-guarantee");
@@ -127,29 +128,43 @@ closeBtn.addEventListener("click", function(evt) {
   
   try {
     storage = localStorage.getItem("login");
+    storageEmail = localStorage.getItem("email");
   } catch (err) {
     isStorageSupport = false;
   }
 
   
 
+
+	
+// 	if (storage) 
+//   {
+//   	login.value = storage;
+//   	email.focus();
+//   } else {
+//   	login.focus();
+//   }
+//   if (storageEmail) 
+//   {
+//   	email.value = storageEmail;
+//   	text.focus();
+//   }
+// });
+
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.add("popup-show");
-	
-	if (storage) 
-  {
-  	login.value = storage;
+
+if (storage || storageEmail) {
+	login.value = storage;
+	email.value = storageEmail;
+	text.focus();
+} else if (storage) {
+	login.value = storage;
   	email.focus();
-  } else {
-  	login.focus();
-  }
-  if (storage) 
-  {
-  	email.value = storage;
-  	
-  	text.focus();
-  }
+} else {
+	login.focus();
+}
 });
 
 close.addEventListener("click", function (evt) {
