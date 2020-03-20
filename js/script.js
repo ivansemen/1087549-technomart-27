@@ -133,23 +133,6 @@ closeBtn.addEventListener("click", function(evt) {
     isStorageSupport = false;
   }
 
-  
-
-
-	
-// 	if (storage) 
-//   {
-//   	login.value = storage;
-//   	email.focus();
-//   } else {
-//   	login.focus();
-//   }
-//   if (storageEmail) 
-//   {
-//   	email.value = storageEmail;
-//   	text.focus();
-//   }
-// });
 
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
