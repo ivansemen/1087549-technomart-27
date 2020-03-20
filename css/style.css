@@ -80,6 +80,7 @@ background-color: #8e1e26;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
  }
 
 .top-header a 
@@ -304,6 +305,12 @@ background-color: #8e1e26;
 {
     background-color: #f3f7f8;
     min-height: 280px;
+    margin-bottom: 58px;
+}
+
+.middle-header-catalog 
+{
+    margin-bottom: 0;
 }
 
 .header-information-wrapper 
@@ -693,7 +700,7 @@ background-color: #8e1e26;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .link-wrapper 
@@ -1052,7 +1059,7 @@ background-color: #8e1e26;
     font-size: 18px;
     list-style: none;
     position: relative;
-    margin-bottom: 38px;
+    margin-bottom: 46px;
 }
 .lists-delivery li 
 {
@@ -1081,7 +1088,7 @@ background-color: #8e1e26;
 }
 .img-map 
 {
-    margin-bottom: 25px;
+    margin-bottom: 33px;
 }
 
 .btn-map 
@@ -1158,7 +1165,7 @@ background-color: #8e1e26;
 
 .rights 
 {
-    margin-right: 120px;
+    margin-right: 176px;
     margin-top: 38px;
 }
 
@@ -1715,7 +1722,7 @@ footer a:hover
     color: #000000;
     font-weight: bold;
     font-size: 17px;
-    margin-bottom: 28px;
+    margin-bottom: 15px;
     margin-top: 9px;
 }
 
@@ -1755,6 +1762,7 @@ footer a:hover
   display: block;
   cursor: pointer;
   user-select: none;
+  margin-bottom: -4px;
 }
 
 .filter-input-checkbox + label::before 
@@ -2023,6 +2031,7 @@ footer a:hover
     padding: 9px 1px;
     text-align: center;
     -moz-appearance: textfield;
+    margin-bottom: 13px;
 }
 
 .input-price::-webkit-inner-spin-button,
@@ -2041,7 +2050,7 @@ footer a:hover
     text-transform: uppercase;
     background-color: #ffffff;
     padding: 10px 38px;
-    margin-top: 20px;
+    margin-top: 36px;
     font-size: 13px;
 }
 
@@ -2101,8 +2110,8 @@ footer a:hover
 {
     min-height: 40px;
     padding: 0 25px;
-    margin-top: 10px;
-    margin-bottom: 15px;   
+    margin-top: 5px;
+    margin-bottom: -8px;   
 }
 
 .item-title a 
@@ -2252,8 +2261,8 @@ footer a:hover
 
  .pagination 
  {
-    margin-top: 50px;
-    margin-bottom: 60px; 
+    margin-top: 35px;
+    margin-bottom: 68px; 
  }
 
  .pagination .pagination-link
@@ -2298,7 +2307,7 @@ footer a:hover
  .about-hammer-wrapper 
  {
     width: 940px;
-    margin-bottom: 70px;
+    margin-bottom: 56px;
  }
 
  .title-about-hammer-drill 
