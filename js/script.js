@@ -71,16 +71,15 @@ var btnRight = document.querySelector(".slider-btn-right");
 var backDot = document.querySelector(".control-back");
 var forwardDot = document.querySelector(".control-forward");
 
-function switchRight() 
-{
+function switchRight() {
+
 	slider2.style.display = "block";
 	slider1.style.display = "none";
 	forwardDot.classList.add("control-slider-active");
 	backDot.classList.remove("control-slider-active");
 }
 
-function switchLeft() 
-{
+function switchLeft() {
 	if (slider2) {
 		slider1.style.display = "block";
 		slider2.style.display = "none";
@@ -162,8 +161,7 @@ evt.preventDefault();
 	popup.classList.remove("popup-error");
 	popup.offsetWidth = popup.offsetWidth;
 	popup.classList.add("popup-error");
-} else 
-{
+} else {
 	if (isStorageSupport) {
 	localStorage.setItem("login", login.value);
 	localStorage.setItem("email", email.value);

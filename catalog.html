@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
 	<link href="css/normalize-min.css" rel="stylesheet">
-	<link href="css/style-min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
@@ -18,7 +18,7 @@
 					alt="Логотип «Техномарт»"></a>
 
 			<form class="search" action="https://echo.htmlacademy.ru" method="get">
-				<input type="search" placeholder="Поиск:">
+				<input class="input-search" type="search" placeholder="Поиск:">
 				<button class="btn-search" type="submit">
 					<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
 						<path class="search-icon" fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
@@ -38,21 +38,27 @@
 
 		<div class="middle-header middle-header-catalog">
 			<div class="header-information-wrapper">
-			<p class="header-information">
+			<p class="header-information header-information-catalog">
 				Интернет-магазин<br>
 				строительных материалов<br>
 				и инструментов для ремонта
 			</p>
 
 			<div class="header-information-items">
-				<p class="header-information phone-number">+7 (812) 555-05-5</p>
+				<a href="tel:+7(812)555-05-55" class="header-information phone-number">+7 (812) 555-05-55</a>
 				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
 
 			<div class="register">
 				<p class="name">
-					Равшан Джамшутович
-					<button type="button" class="btn-exit"></button>
+					<svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="#c5c5c5"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+					<a href="#" class="name-link">Равшан Джамшутович</a>
+					<a class="btn-exit" href="#">
+						<span class="visually-hidden">
+						Деавторизации
+						</span>
+					<svg class="icon-logout" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+					</a>
 				</p>
 				<a class="my-order" href="#">Мои заказы</a>
 				<a class="personal-area" href="#">Личный кабинет</a>
@@ -160,20 +166,22 @@
 			<div class="sort">
 			<h2 class="title-sort">Сортировка:</h2>
 				<ul class="sort-lists">
-					<li><a class="sort-link" href="#">По цене</a></li>
+					<li><a class="sort-link sort-link-active" href="#">По цене</a></li>
 					<li><a class="sort-link" href="#">По типу</a></li>
 					<li><a class="sort-link" href="#">По функционалу</a></li>
-				</ul>
-				<button type="button" class="sort-btn sort-btn-top">
+					<li><button type="button" class="sort-btn sort-btn-top sort-btn-active">
 					<span class="visually-hidden">Кнопка для сортировки по убыванию</span>
 					<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="#231F20" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/>
 					</svg>
-				</button>
-				<button type="button" class="sort-btn sort-btn-bottom">
+					</button>
+					</li>
+					<li><button type="button" class="sort-btn sort-btn-bottom">
 					<span class="visually-hidden">Кнопка для сортировки по возрастанию</span>
 					<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="#231F20" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/>
 					</svg>
-				</button>
+					</button>
+					</li>
+				</ul>
 			</div>
 			<h2 class="visually-hidden">Список товаров</h2>
 			<ul class="items">
@@ -466,7 +474,7 @@
 			<h2 class="title-about-hammer-drill">Пара слов о перфораторах</h2>
 			<p class="text-about-hammer-drill">
 				Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br> 
 				В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 			</p>
 		</div>
@@ -481,25 +489,24 @@
 
 			
 				<p class="footer-information">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-				+7 (812) 555-05-5
+				<a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
 				</p>
 				</div>
 			
 			<div class="lists-wrapper">
-			<ul class="information-lists">
-				<li><a href="#">Компания</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a class="contact-link" href="#">Контакты</a></li>
-			</ul>
-
-			<ul class="catalog-lists">
-				<li><a href="#">Материалы</a></li>
-				<li><a href="#">Техника</a></li>
-				<li><a href="#">Инструмент</a></li>
-				<li><a class="special-offers-link" href="#">Спецпредложения</a></li>
-			</ul>
+			<div class="information-lists">
+				<a href="#">Компания</a>
+				<a href="#">Новости</a>
+				<a href="#">Каталог</a>
+				<a href="#">Доставка</a>
+				<a class="contact-link" href="#">Контакты</a>
+			</div>
+			<div class="catalog-lists">
+				<a href="#">Материалы</a>
+				<a href="#">Техника</a>
+				<a href="#">Инструмент</a>
+				<a class="special-offers-link" href="#">Спецпредложения</a>
+			</div>
 			</div>
 			
 
@@ -537,7 +544,7 @@
 
 			<p class="developer">
 				Разработано -<br>
-				<a class="connection-link" href="#">htmlacademy.ru</a>
+				<a class="connection-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 			</p>
 
 		</section>
