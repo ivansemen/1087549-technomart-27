@@ -72,7 +72,6 @@ var backDot = document.querySelector(".control-back");
 var forwardDot = document.querySelector(".control-forward");
 
 function switchRight() {
-
 	slider2.style.display = "block";
 	slider1.style.display = "none";
 	forwardDot.classList.add("control-slider-active");
@@ -125,12 +124,12 @@ closeBtn.addEventListener("click", function(evt) {
 	mapPopup.classList.remove("popup-show");
 });
   
-  try {
+ try {
     storage = localStorage.getItem("login");
     storageEmail = localStorage.getItem("email");
-  } catch (err) {
+} catch (err) {
     isStorageSupport = false;
-  }
+}
 
 
 link.addEventListener("click", function (evt) {

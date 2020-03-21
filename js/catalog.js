@@ -4,8 +4,8 @@ var closeBtn = popup.querySelector(".close-popup-basket");
 
 for (var i = 0; i < btnBasket.length; i++) {
 btnBasket[i].addEventListener("click", function (evt) {
-	evt.preventDefault();
-	popup.classList.add("popup-show");
+  evt.preventDefault();
+  popup.classList.add("popup-show");
 });
 }
 
@@ -20,6 +20,5 @@ window.addEventListener("keydown", function (evt) {
       if (popup.classList.contains("popup-show")) {
         popup.classList.remove("popup-show");
       }
-    
     }
   });
