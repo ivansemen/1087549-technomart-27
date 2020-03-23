@@ -7,6 +7,7 @@ body {
   line-height: 24px;
 
   background-color: #ffffff;
+  min-width: 950px;
 }
 
 a {
@@ -295,6 +296,7 @@ img {
 .phone-number {
   border: 3px solid #ffffff;
   font-size: 21px;
+  font-style: normal;
   width: 257px;
   height: 40px;
   position: relative;
@@ -400,6 +402,8 @@ img {
 .slider {
   width: 620px;
   position: relative;
+  background-color: #9a9791;
+  height: 266px;
 }
 
 .materials {
@@ -520,11 +524,13 @@ img {
 .link-slider {
   background-color: #ee3643;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   position: absolute;
-  top: 208px;
-  left: 25px;
-  padding: 7px 38px;
+  top: 205px;
+  left: 24px;
+  padding: 10px 48px;
   border-radius: 3px;
 }
 
@@ -799,6 +805,8 @@ img {
   line-height: 24px;
   margin: 0;
   margin-bottom: 68px;
+  position: relative;
+  z-index: 2;
 }
 
 .credit-text {
@@ -828,7 +836,7 @@ img {
   height: 261px;
   background-image: url("../img/delivery.png");
   position: absolute;
-  top: 26px;
+  top: 23px;
   right: 1px;
 }
 
@@ -884,7 +892,7 @@ img {
 .title-information {
   font-size: 30px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
   text-transform: uppercase;
   font-weight: normal;
   line-height: 30px;
@@ -1132,12 +1140,14 @@ img {
   margin-right: 50px;
   margin-top: 38px;
   line-height: 18px;
+  font-size: 16px;
 }
 
 .developer {
   margin-top: 40px;
-  margin-right: 40px;
+  margin-right: 55px;
   line-height: 18px;
+  font-size: 16px;
 }
 
 .soc-net .social-list:hover,
@@ -1331,6 +1341,9 @@ footer a:hover {
   width: 460px;
   height: 38px;
   color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .middle-header .name {
@@ -1361,9 +1374,17 @@ footer a:hover {
   cursor: pointer;
 }
 
+.btn-exit {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    right: -66px;
+    margin-left: -45px;
+}
+
 .btn-exit .icon-logout {
   position: absolute;
-  right: 10px;
+  right: 8px;
   top: 14px;
   background: none;
   border: none;
@@ -1554,6 +1575,10 @@ footer a:hover {
   opacity: 1;
 }
 
+.filter-input-checkbox:disabled+label::before {
+  opacity: 0.3;
+}
+
 .filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
@@ -1570,6 +1595,10 @@ footer a:hover {
 
 .filter-input-checkbox:checked+label:hover::after {
   opacity: 1;
+}
+
+.filter-input-checkbox:checked:disabled+label::after {
+  opacity: 0.3;
 }
 
 .filter-input-radio+label::before {
@@ -1589,6 +1618,9 @@ footer a:hover {
   opacity: 1;
 }
 
+.filter-input-radio:disabled+label::before {
+  opacity: 0.3;
+}
 
 .filter-input-radio:checked+label::after {
   content: "";
@@ -1605,6 +1637,10 @@ footer a:hover {
 
 .filter-input-radio:checked+label:hover::after {
   opacity: 1;
+}
+
+.filter-input-radio:checked:disabled+label::after {
+  opacity: 0.3;
 }
 
 .catalog {
@@ -1668,7 +1704,6 @@ footer a:hover {
   font-size: 13px;
   line-height: 18px;
   font-family: 'PT Sans', 'Segoe UI', 'Helvetica', sans-serif;
-  font-weight: bold;
 }
 
 .sort-link:first-child {
@@ -1829,19 +1864,16 @@ footer a:hover {
   box-shadow: 0 10px 35px 0 #bec2c6;
 }
 
-.flag-new {
+.item-new::after {
+  content: "";
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.flag {
   position: absolute;
   top: -1px;
   right: -1px;
   width: 60px;
   height: 60px;
-
   text-indent: -1000px;
   overflow: hidden;
   z-index: 20;
