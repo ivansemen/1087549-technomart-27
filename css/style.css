@@ -7,7 +7,7 @@ body {
   line-height: 24px;
 
   background-color: #ffffff;
-  min-width: 950px;
+  min-width: 1093px;
 }
 
 a {
@@ -1375,11 +1375,11 @@ footer a:hover {
 }
 
 .btn-exit {
-    position: relative;
-    width: 45px;
-    height: 45px;
-    right: -66px;
-    margin-left: -45px;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  right: -66px;
+  margin-left: -45px;
 }
 
 .btn-exit .icon-logout {
